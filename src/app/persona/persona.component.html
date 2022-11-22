@@ -1,12 +1,15 @@
 <div class="container">
-  <div class="row">
-    <div class="col">
-      <div>
-        {{ indice + 1 }}: {{ persona.nombre }} {{ persona.apellido }}
-        <button type="submit" class="btn btn-info" (click)="emitirSaludo()">
-          Editar
-        </button>
+  <div class="card  col-sm-4 offset-sm-4">
+    <div class="card-body ">
+      <div class="row">
+        <div class="col">
+          <div class="text-center">
+            {{ indice + 1 }}: {{ persona.nombre }} {{ persona.apellido }}
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+

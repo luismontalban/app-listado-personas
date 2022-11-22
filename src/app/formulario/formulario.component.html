@@ -1,29 +1,37 @@
-<form class="row">
-  <div class="form-group col-md-2">
-    <label for="nombre" class="visually-hidden">Nombre</label>
-    <input
-      type="text"
-      id="nombre"
-      placeholder="Nombre"
-      class="form-control"
-      #nombreInput
-      name="nombre"
-    />
+<div class="card col-sm-4 offset-sm-4 shadow p-3 mb-5 bg-body rounded">
+  <div class="card-body">
+    <form class="row">
+      <div class="form-group mb-2">
+        <label for="nombre" class="visually-hidden">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          placeholder="Nombre"
+          class="form-control"
+          #nombreInput
+          name="nombre"
+        />
+      </div>
+      <div class="form-group mb-2">
+        <label for="apellido" class="visually-hidden">Apellido</label>
+        <input
+          type="text"
+          id="apellido"
+          placeholder="Apellido"
+          class="form-control"
+          #apellidoInput
+          name="apellido"
+        />
+      </div>
+      <div class="col">
+        <button
+          type="submit"
+          class="btn btn-primary mt-2"
+          (click)="agregarPersona()"
+        >
+          Guardar
+        </button>
+      </div>
+    </form>
   </div>
-  <div class="form-group col-md-2">
-    <label for="apellido" class="visually-hidden">Apellido</label>
-    <input
-      type="text"
-      id="apellido"
-      placeholder="Apellido"
-      class="form-control"
-      #apellidoInput
-      name="apellido"
-    />
-  </div>
-  <div class="col">
-    <button type="submit" class="btn btn-primary" (click)="agregarPersona()">
-      Guardar
-    </button>
-  </div>
-</form>
+</div>
